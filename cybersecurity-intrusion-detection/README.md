@@ -45,4 +45,4 @@ The final evaluation metrics for the optimized Random Forest model on the test s
 | Accuracy  | 89.5%   |
 | Precision | 99.4%   |
 | Recall    | 77.4%   |
-| F1-Score  | 77.4%   |
+| F1-Score  | 87.0%   |

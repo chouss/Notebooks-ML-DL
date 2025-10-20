@@ -1,21 +1,32 @@
-## Brain Tumor Segmentation using Fine-Tuned nnU-Netv2
-**DataSet**
+# Brain Tumor Segmentation using Fine-Tuned nn-U-Netv2
 
-you can download it from:
-    ``` bash
-https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1
+This project enhances brain tumor segmentation by fine-tuning the powerful **nn-U-Netv2** architecture. By leveraging deep learning on MRI scans, we achieve highly accurate and reliable tumor detection, providing a valuable tool for medical professionals.
 
-**Our Project**
-This project aims to improve brain tumor segmentation using a fine-tuned version of the nnU-Netv2 architecture. By leveraging deep learning and medical imaging (MRI), we enhance the accuracy and reliability of tumor detection and segmentation. The system is trained and evaluated on the BraTS 2020 and BraTS 2021 datasets, using both standard and ResEnc nnU-Net configurations.  
+A simple, user-friendly interface has also been developed, making the model accessible for quick MRI analysis and tumor visualization.
 
-We also introduce ensemble methods—Max Probability and Probability Averaging—to combine outputs from different models, achieving smoother and more precise segmentation results.  
+---
 
-A simple, user-friendly interface has been developed to make the model accessible to healthcare professionals, enabling quick MRI analysis and tumor visualization.
+## Key Features
 
-## Results 
-Based on evaluation on the **BraTS 2021 dataset**, the segmentation model exhibits strong foreground segmentation performance, achieving a mean Dice score of **84.45%**, indicating substantial overlap between predicted and ground truth tumor regions.   
+* **Advanced Architecture:** Utilizes both standard and ResEnc configurations of nn-U-Netv2 for robust performance.
+* **Ensemble Methods:** Employs Max Probability and Probability Averaging techniques to combine model outputs, leading to smoother and more precise segmentation.
+* **User-Friendly Interface:** A simple GUI allows healthcare professionals to easily upload MRI scans and visualize segmentation results.
+* **High-Quality Training Data:** Trained and evaluated on the BraTS 2020 and BraTS 2021 datasets.
 
-The mean Intersection over Union (IoU) further supports this, reaching **76.78%** and confirming high volumetric segmentation accuracy.  
+---
 
-In terms of tumor identification within the BraTS 2021 dataset, the model demonstrates a high Sensitivity of approximately **88.6%**,signifying its ability to correctly detect a large proportion of the actual tumor regions within the foreground.
+## Results
 
+The model was evaluated on the **BraTS 2021 dataset**, demonstrating strong performance in identifying and outlining tumor regions.
+
+* **Dice Score:** Achieved a mean Dice score of **84.45%**, indicating excellent overlap between predicted and ground truth tumors.
+* **Intersection over Union (IoU):** Reached a mean IoU of **76.78%**, confirming high volumetric accuracy.
+* **Sensitivity:** Demonstrated a high sensitivity of approximately **88.6%**, showing its effectiveness in correctly detecting actual tumor tissue.
+
+---
+
+## Dataset
+
+The model was trained using the BraTS 2021 Task 1 dataset, which can be downloaded from Kaggle:
+
+* [**BraTS 2021 Task 1 Dataset**](https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1)
